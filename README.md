@@ -1,28 +1,18 @@
 # AwsAccountNumber
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/aws_account_number`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+You can get your Amazon Web Services (AWS) account number.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```ruby
-gem 'aws_account_number'
+gem install aws-account-number
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install aws_account_number
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+aws-account-number get
+```
 
 ## Development
 
