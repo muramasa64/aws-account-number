@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "aws_account_number"
+
+AwsAccountNumber::CLI.start
