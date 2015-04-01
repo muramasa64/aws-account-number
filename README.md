@@ -5,13 +5,13 @@ You can get your Amazon Web Services (AWS) account number.
 ## Installation
 
 ```ruby
-gem install aws-account-number
+gem install aws_account_number
 ```
 
 ## Usage
 
 ```
-aws-account-number get
+aws_account_number get
 ```
 
 ## Development
