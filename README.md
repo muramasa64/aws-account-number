@@ -11,7 +11,14 @@ gem install aws_account_number
 ## Usage
 
 ```
-aws_account_number get
+# default by security group
+$ aws_account_number
+
+# by CloudFormation
+$ aws_account_number cfn
+
+# use profile
+$ aws_account_number --profile foo
 ```
 
 ## Development
