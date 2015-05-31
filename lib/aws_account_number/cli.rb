@@ -49,5 +49,15 @@ module AwsAccountNumber
         exit 1
       end
     end
+
+    desc :iamuser, "get AWS Account Number from current IAM User", alias: :i
+    def iamuser
+      begin
+        puts iam.current_user.arn.split(':')[4]
+      rescue RuntimeError => e
+        $stderr.puts e
+        exit 1
+      end
+    end
   end
 end
