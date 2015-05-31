@@ -17,6 +17,9 @@ $ aws_account_number
 # by CloudFormation
 $ aws_account_number cfn
 
+# by IAM User (use current credentials)
+$ aws_account_number iamuser
+
 # use profile
 $ aws_account_number --profile foo
 ```
