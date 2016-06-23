@@ -59,5 +59,15 @@ module AwsAccountNumber
         exit 1
       end
     end
+
+    desc :simpletoken, "get AWS Account Number from current user cretentials", alias: :t
+    def simpletoken
+      begin
+        puts sts.get_caller_identity.account
+      rescue RuntimeError => e
+        $stderr.puts e
+        exit 1
+      end
+    end
   end
 end
