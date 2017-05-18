@@ -63,7 +63,7 @@ module AwsAccountNumber
     desc :simpletoken, "get AWS Account Number from current user cretentials", alias: :t
     def simpletoken
       begin
-        puts sts.get_caller_identity.account
+        puts sts.client.get_caller_identity.account
       rescue RuntimeError => e
         $stderr.puts e
         exit 1
